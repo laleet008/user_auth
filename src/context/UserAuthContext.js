@@ -6,6 +6,8 @@ import {
   onAuthStateChanged,
   GoogleAuthProvider,
   signInWithPopup,
+  RecaptchaVerifier,
+  signInWithPhoneNumber,
 } from "firebase/auth";
 
 import { auth } from "../firbase";
@@ -14,6 +16,7 @@ const userAuthContext = createContext();
 
 export function UserAuthProvider({ children }) {
   const [user, setUser] = useState("");
+
   function signUp(email, password) {
     return createUserWithEmailAndPassword(auth, email, password);
   }
@@ -30,6 +33,16 @@ export function UserAuthProvider({ children }) {
     return signInWithPopup(auth, googleAuthProvider);
   }
 
+  function setUpRecaptcha(number) {
+    const recaptchaVerifier = new RecaptchaVerifier(
+      "recaptcha-container",
+      {},
+      auth
+    );
+    recaptchaVerifier.render();
+    return signInWithPhoneNumber(auth, number, recaptchaVerifier);
+  }
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -41,7 +54,7 @@ export function UserAuthProvider({ children }) {
 
   return (
     <userAuthContext.Provider
-      value={{ user, signUp, logIn, logOut, googleSignIn }}
+      value={{ user, signUp, logIn, logOut, googleSignIn, setUpRecaptcha }}
     >
       {children}
     </userAuthContext.Provider>

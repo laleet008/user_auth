@@ -112,6 +112,17 @@ const Login = () => {
                           className="w-full"
                         />
                       </div>
+                      <Link to="/phonesignup">
+                        <div className="text-center mt-6">
+                          <button
+                            className="bg-yellow-600 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
+                            type="Submit"
+                            style={{ transition: "all .15s ease" }}
+                          >
+                            Sign In with Phone
+                          </button>
+                        </div>
+                      </Link>
                     </form>
                   </div>
                 </div>

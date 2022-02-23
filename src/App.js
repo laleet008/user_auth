@@ -13,6 +13,7 @@ import Signup from "./components/Signup";
 import { UserAuthProvider } from "./context/UserAuthContext";
 import Dashboard from "./components/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import PhoneSignup from "./components/PhoneSignup";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           />
           <Route exact path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/phonesignup" element={<PhoneSignup />}></Route>
 
           <Route exact path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>

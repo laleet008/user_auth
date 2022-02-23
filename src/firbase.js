@@ -3,13 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC2oar-ZHjKGV4HnyCErOONY2zLRNRgwXg",
-  authDomain: "react-auth-2f564.firebaseapp.com",
-  projectId: "react-auth-2f564",
-  storageBucket: "react-auth-2f564.appspot.com",
-  messagingSenderId: "458782146702",
-  appId: "1:458782146702:web:56899eea50251c5c4c09df",
-  measurementId: "G-CYM0EC6RYG",
+  apiKey: "AIzaSyDRFcEyAk2xC-3Iz8X7ezicQoDgkFmwTL0",
+  authDomain: "phone-auth-e2158.firebaseapp.com",
+  projectId: "phone-auth-e2158",
+  storageBucket: "phone-auth-e2158.appspot.com",
+  messagingSenderId: "139093588884",
+  appId: "1:139093588884:web:7112233749f5be4289ad81",
 };
 
 // Initialize Firebase
