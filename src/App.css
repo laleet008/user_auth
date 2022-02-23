@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&family=Overpass&family=Pacifico&display=swap");
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+/* Navbar */
+.logo_text {
+  font-family: "Pacifico", cursive;
+}
+
+.navbar ul > .nav_elements {
+  margin-right: 30px;
+  color: rgba(128, 128, 128, 0.7);
+}
+.nav_elements:active {
+  color: #1791a0;
+}
+.nav_elements:hover {
+  color: #1791a0;
+}
+
+.nav_elements:active,
+.nav_items .nav_elements:first-child {
+  color: #1791a0;
+}
+
+/* Featured */
+.featured {
+  height: 700px;
+}
+
+.featured_container {
+  background-color: #1791a0;
+
+  margin-left: 980px;
+  margin-right: 100px;
+}
+
+.featured_container .line {
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.featured_container .featured_para {
+  font-size: 1.8rem;
+}
+
+.follow_us {
+  margin-left: 1135px;
+  margin-top: 450px;
+  font-size: 1.3rem;
+}
+
+.icon_container > * {
+  margin-right: 20px;
+}
+
+.ellipses {
+  margin-left: 700px;
+  margin-top: 650px;
+}
+
+.ellipses > * {
+  margin-right: 10px;
+}
+
+.ellipse {
+  height: 7px;
+  width: 7px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+/* .content-container {
+  height: 200px;
+} */
+
+/* Meet dogs */
+.heading_line {
+  width: 60px;
+  border: 0.5px solid #1791a0;
+  background-color: #1791a0;
+  position: relative;
+}
+
+.meet_para {
+  width: 400px;
+}
+
+.view_more {
+  color: #0aa6bd;
+}
+
+/* recent projects */
+.recent_projects {
+  background-color: #f8f8f8;
+}
+
+.projects_container {
+  margin-top: 30px;
+}
+
+.recent_projects .the_plus {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 435px;
+}
+
+.featured_img_container {
+  width: 500px;
+}
+
+/* upcoming events */
+
+.date_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcoming_line {
+  width: 370px;
+}
+/* past events */
+
+.past_card {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* recent news */
+.recent_news {
+  background-color: #f8f8f8;
+}
+
+.recent_news_div {
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+.recent_news_time {
+  background-color: #1791a0;
+}
+
+/* our team */
+.first_members_icons {
+  color: #0aa6bd;
+}
+
+/* gallery */
+.gallery {
+  background-color: #f8f8f8;
+}
+
+/* testimonials */
+.review_div {
+  background-color: #9a9a9a;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 27px solid #9a9a9a;
+  border-left: 27px solid transparent;
+}
+
+.squares_testimonials > * {
+  margin-right: 16px;
+}
+
+.testimonials_sq {
+  height: 11px;
+  width: 11px;
+  /* border: 1px solid #fff; */
+}
+
+.testimonials_sq_mid {
+  background-color: #1791a0;
+}
+
+.testimonials_outer_sq {
+  height: 22px;
+  width: 22px;
+  border: 1px solid #1791a0;
+}
+.name_testimonials {
+  color: #1791a0;
+}
+
+/* partners */
+
+.partners {
+  background-color: #f8f8f8;
+}
+
+.partners_card {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: -60px;
+}
+
+/* resources */
+.resources {
+  margin-top: 34px;
+}
+
+.resource_container {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+.download_resources {
+  color: #1791a0;
+}
+
+.bg_box {
+  background-color: #1791a0;
+}
+
+.resource_nav_el:active,
+.resource_nav li:first-child {
+  border-bottom: 2px solid #1791a0;
+}
+
+/* footer */
+.footer {
+  background-color: #3c3d41;
+}
+
+.input_button_footer {
+  background-color: #0aa6bd;
+}
+
+.lower_footer {
+  background-color: #171717;
+}
+
+/* Error page */
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound .notfound-404 h2 {
+  font-family: "Maven Pro", sans-serif;
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound h3 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.notfound p {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #189cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0;
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+  }
+  .notfound h2 {
+    font-size: 26px;
+  }
+}
