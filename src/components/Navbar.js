@@ -53,22 +53,22 @@ const Navbar = () => {
           >
             home
           </NavLink>
-          <NavLink to="about" className="nav_elements md:my-0 my-2">
+          <NavLink to="/about" className="nav_elements md:my-0 my-2">
             about us +
           </NavLink>
-          <NavLink to="news" className="nav_elements md:my-0 my-2">
+          <NavLink to="/news" className="nav_elements md:my-0 my-2">
             news and events +
           </NavLink>
-          <NavLink to="gallery" className="nav_elements md:my-0 my-2">
+          <NavLink to="/gallery" className="nav_elements md:my-0 my-2">
             gallery
           </NavLink>
-          <NavLink to="resources" className="nav_elements md:my-0 my-2">
+          <NavLink to="/resources" className="nav_elements md:my-0 my-2">
             resources +
           </NavLink>
-          <NavLink to="projects" className="nav_elements md:my-0 my-2">
+          <NavLink to="/projects" className="nav_elements md:my-0 my-2">
             projects
           </NavLink>
-          <NavLink to="team" className="nav_elements md:my-0 my-2">
+          <NavLink to="/team" className="nav_elements md:my-0 my-2">
             contacts
           </NavLink>
           <NavLink to="" className="md:my-0 my-2 flex ">

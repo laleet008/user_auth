@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { BiTimeFive } from "react-icons/bi";
 import { AiOutlineRightCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Featured = () => {
   return (
@@ -62,6 +63,14 @@ const Featured = () => {
           <FaFacebookF />
           <FaYoutube />
         </div>
+      </div>
+      <div className="flex absolute bg-red justify-end align-end items-end mt-[560px] ml-[540px]">
+        <Link
+          to="/login"
+          className="text-lg text-white bg-blue-800 hover:bg-transparent font-bold py-2 px-4 rounded-full"
+        >
+          Log in/Sign Up{" "}
+        </Link>
       </div>
 
       <ul className="absolute ellipses flex" data-aos="flip-up">
